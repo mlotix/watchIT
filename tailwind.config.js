@@ -33,6 +33,7 @@ module.exports = {
         '80view': '80vh',
         '60view': '60vh',
         '25vmax': '30vmax',
+        '2half': '10px',
       },
       borderRadius: {
         default: '20px',
@@ -46,9 +47,14 @@ module.exports = {
       },
       minHeight: {
         '80': '70px',
+        '50p': '50%',
       },
       maxWidth: {
         '70p': '70%',
+        '75p': '75%',
+      },
+      height: {
+        '70p': '55%',
       },
     },
   },

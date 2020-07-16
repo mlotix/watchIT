@@ -1,6 +1,8 @@
 <template>
 <div class="heading-wrapper tracking-tight bg-gray-light px-30 py-2 md:py-5 w-full flex flex-col md:flex-row items-center justify-center md:justify-end md:sticky md:top-0 z-10">
-<img src="~/assets/images/watchITlogo.svg" class="h-12 md:h-14 lg:h-16 md:mr-auto" alt="WatchIT logo"/>
+<a href="#" @click.prevent="goToIndex" class="md:mr-auto">
+  <img src="~/assets/images/watchITlogo.svg" class="h-12 md:h-14 lg:h-16" alt="WatchIT logo"/>
+</a>
 <div class="search-bar md:self-end bg-white font-sans m-3 h-12 flex justify-between px-4 rounded w-full md:max-w-sm lg:max-w-md">
   <input type="text" name="search" placeholder="Search for watches..." class="font-sans text-base h-12 focus:outline-none w-4/5" alt="search">
   <img src="~/assets/images/search-solid.svg" class="h-5 self-center transform scale-x-invert opacity-35 cursor-pointer"/>
@@ -30,7 +32,11 @@
 
 <script>
 export default {
-
+  methods: {
+    goToIndex() {
+      this.$router.push('/')
+    }
+  }
 }
 </script>
 

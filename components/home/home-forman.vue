@@ -9,73 +9,13 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
- data () {
-   return {
-     watches: [
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'Samsung Galaxy Watch SM-1342525252 Smartwatch',
-         price: 329.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/samsung.jpg',
-       },
-       {
-         name: 'HUGO BOSS HB1513580 TALENT 42MM',
-         price: 149.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/hugo.jpg',
-       },
-       {
-         name: 'HUGO BOSS HB1513580 TALENT 42MM',
-         price: 149.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/hugo.jpg',
-       },
-       {
-         name: 'HUGO BOSS HB1513580 TALENT 42MM',
-         price: 149.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/hugo.jpg',
-       },
-       {
-         name: 'HUGO BOSS HB1513580 TALENT 42MM',
-         price: 149.99,
-         image: 'http://localhost:3000/_nuxt/assets/images/hugo.jpg',
-       }
-     ]
-   }
- }
+  props: {
+    watches: {
+      required: true
+    }
+  }
 }
 </script>
 

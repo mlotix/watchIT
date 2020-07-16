@@ -1,7 +1,7 @@
 export const state = () => ({
   categories: [
     {
-      name: 'For Woman',
+      name: 'For Man',
       id: null,
       cats: [
         {
@@ -57,7 +57,7 @@ export const state = () => ({
       ]
     },
     {
-      name: 'For Man',
+      name: 'For Woman',
       id: null,
       cats: [
         {
