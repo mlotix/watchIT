@@ -42,7 +42,7 @@ export default {
         id: params.id,
       }
     } catch (e) {
-      return {
+      return {      //modify error handling
         error: e.response.data
       }
     }
@@ -62,7 +62,7 @@ export default {
         return
       }
 
-      this.$nuxt.$loading.start()
+        this.$nuxt.$loading.start()
 
       try {
         const products = await this.$axios.get('http://storeapi.test/api/categories/' + this.id + '/products?per_page=24&page=' + page)
@@ -70,7 +70,12 @@ export default {
         this.productsMeta = products.data.meta ? products.data.meta : null
 
       } catch (e) {
+        if(e.response) {
           this.error = e.response.data
+        }
+        else {
+          this.error = { code: 404, data: 'there was an error fetching your data'}
+        }
       } finally {
         if(this.pages.current > 1) {
           this.$router.replace({ query: {page: this.pages.current}})

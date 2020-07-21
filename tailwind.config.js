@@ -18,7 +18,12 @@ module.exports = {
         featured: '#D4DAE1',
       },
       red: '#D84B4B',
-      white: '#fff',
+      green: '#229954',
+      orange: '#F5B041',
+      white: {
+        default: '#fff',
+        dark: '#F8F8F8',
+      },
       black: '#000',
     },
     fontFamily: {

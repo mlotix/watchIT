@@ -21,7 +21,7 @@ export default {
     const watches1 = await $axios.get('http://storeapi.test/api/products?per_page=8')
 
     return {
-      watches2: watches2.data.data,
+      watches2: watches2.data.data,   //add error handling
       watches1: watches1.data.data
     }
   }

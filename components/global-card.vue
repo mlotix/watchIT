@@ -1,5 +1,5 @@
 <template>
-  <div class="featured-watches-card text-center px-1 py-3 shop-card flex flex-col justify-between bg-white">
+  <div class="featured-watches-card text-center px-1 py-3 shop-card flex flex-col justify-between bg-white cursor-pointer" @click.prevent="goToProduct(product.id)">
     <img :src="product.image" :alt="product.name" class=" mx-auto">
     <p class="text-md lg:text-lg font-semibold my-2 product-name">{{ product.name }}</p>
     <p class="text-lg lg:text-xl font-light"> {{ price }} </p>
@@ -23,6 +23,11 @@ export default {
        return price + '0'
      }
      return price
+   }
+ },
+ methods: {
+   goToProduct(id) {
+     this.$router.push('/product/' + id)
    }
  }
 }
