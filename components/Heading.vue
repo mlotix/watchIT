@@ -25,12 +25,13 @@
       Wishlist
     </p>
   </a>
-  <a class="flex flex-col justify-center items-center px-6 md:px-5 hover:text-gray-dark hover:underline relative">
+  <n-link to="/login" no-prefetch class="flex flex-col justify-center items-center px-6 md:px-5 hover:text-gray-dark hover:underline relative">
     <fa-icon :icon="['fas', 'user']" size="lg"></fa-icon>
     <p class="mt-1 text-xs lg:text-sm">
       Account
     </p>
-  </a>
+  </n-link>
+
 </div>
 </div>
 </template>

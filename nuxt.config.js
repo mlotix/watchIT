@@ -30,7 +30,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '~/plugins/fontawesome.js'
+    '~/plugins/fontawesome.js',
+    '~/plugins/vuelidate.js'
   ],
   /*
   ** Nuxt.js dev-modules
@@ -47,6 +48,9 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
   ],
+  axios: {
+   proxy: true // Can be also an object with default options
+ },
   /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
@@ -61,7 +65,10 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
+    },
+    vendor: [
+    'vuelidate'
+    ]
   },
   server: {
     port: 3000,
